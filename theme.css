@@ -1,0 +1,46 @@
+/* ===== Theme System ===== */
+
+:root,
+[data-theme="bb-pastel"] {
+  --bg-base: #f9f6f1;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --primary: #7a9e7a;
+  --primary-hover: #6b8e6b;
+  --primary-text: #ffffff;
+  --secondary: #e8d5b5;
+  --secondary-hover: #dcc8a5;
+  --danger: #e8897a;
+  --danger-hover: #d97768;
+  --danger-text: #ffffff;
+  --text: #3a3a3a;
+  --text-muted: #8a8a7a;
+  --text-heading: #5a7a5a;
+  --border: #e0ddd5;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+[data-theme="nord"] {
+  --bg-base: #eceff4;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --primary: #5e81ac;
+  --primary-hover: #4f739b;
+  --primary-text: #ffffff;
+  --secondary: #d8dee9;
+  --secondary-hover: #c8d0df;
+  --danger: #bf616a;
+  --danger-hover: #ae525b;
+  --danger-text: #ffffff;
+  --text: #2e3440;
+  --text-muted: #6c7280;
+  --text-heading: #3b4252;
+  --border: #d8dee9;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 2px 8px rgba(46,52,64,0.08);
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}

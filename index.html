@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bb-pastel">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World — Play</title>
+  <link rel="stylesheet" href="/theme.css" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🌍 Hello World</h1>
+      <button id="theme-toggle" class="btn-icon" title="Toggle theme" aria-label="Switch theme">🎨</button>
+    </header>
+
+    <main>
+      <section class="card" id="greeting-card">
+        <h2>Greetings</h2>
+        <div class="greeting-display">
+          <span id="greeting-text" class="greeting-text">Hello, Hackathon!</span>
+        </div>
+        <div class="input-row">
+          <input type="text" id="name-input" placeholder="Enter your name…" maxlength="50" aria-label="Your name" />
+          <button id="greet-btn" class="btn-primary">Say Hello</button>
+        </div>
+      </section>
+
+      <section class="card" id="counter-card">
+        <h2>Click Counter</h2>
+        <p class="counter-value">
+          Count: <strong id="counter">0</strong>
+        </p>
+        <div class="btn-row">
+          <button id="counter-inc" class="btn-primary">+1</button>
+          <button id="counter-dec" class="btn-secondary">-1</button>
+          <button id="counter-reset" class="btn-outline">Reset</button>
+        </div>
+        <p id="counter-toast" class="toast hidden" role="status"></p>
+      </section>
+
+      <section class="card" id="error-demo-card">
+        <h2>Error Demo</h2>
+        <p>Trigger an error to test the error boundary:</p>
+        <button id="trigger-error" class="btn-danger">Throw Error</button>
+        <div id="error-boundary" class="error-boundary hidden" role="alert">
+          <strong>⚠️ Something went wrong</strong>
+          <p id="error-message"></p>
+          <button id="dismiss-error" class="btn-outline">Dismiss</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built for hackathon · <span id="year"></span></p>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

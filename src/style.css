@@ -1,0 +1,269 @@
+/* ===== App Styles ===== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-base);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+header h1 {
+  font-size: 1.75rem;
+  color: var(--text-heading);
+  font-weight: 700;
+}
+
+.btn-icon {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 0.7rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.btn-icon:hover {
+  background: var(--secondary);
+  transform: scale(1.05);
+}
+
+/* Main area */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.card h2 {
+  font-size: 1.15rem;
+  color: var(--text-heading);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+/* Greeting */
+.greeting-display {
+  margin: 1rem 0;
+}
+
+.greeting-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.input-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  background: var(--bg-surface);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input-row input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(122, 158, 122, 0.15);
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary,
+.btn-outline,
+.btn-danger {
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible,
+.btn-outline:focus-visible,
+.btn-danger:focus-visible,
+.btn-icon:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  background: var(--secondary);
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: var(--danger-text);
+}
+
+.btn-danger:hover {
+  background: var(--danger-hover);
+}
+
+.btn-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+
+/* Counter */
+.counter-value {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.counter-value strong {
+  font-size: 2rem;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Toast */
+.toast {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  background: var(--secondary);
+  color: var(--text);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.toast.hidden {
+  display: none;
+}
+
+/* Error boundary */
+.error-boundary {
+  margin-top: 0.75rem;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-sm);
+  background: #fef2f2;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+[data-theme="nord"] .error-boundary {
+  background: #f0f2f5;
+}
+
+.error-boundary.hidden {
+  display: none;
+}
+
+.error-boundary strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.error-boundary .btn-outline {
+  margin-top: 0.5rem;
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  #app {
+    padding: 1rem;
+  }
+  .input-row {
+    flex-direction: column;
+  }
+  .btn-row {
+    flex-direction: column;
+  }
+  .btn-row button {
+    width: 100%;
+  }
+}

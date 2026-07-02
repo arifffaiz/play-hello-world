@@ -1,6 +1,74 @@
 /* ===== Theme System ===== */
+/* Default (no attribute) = dark bb-pastel */
+:root {
+  --bg-base: #2a2722;
+  --bg-surface: #35312b;
+  --bg-card: #3d3932;
+  --primary: #8cb88c;
+  --primary-hover: #7da87d;
+  --primary-text: #1a1a18;
+  --secondary: #5a4e3e;
+  --secondary-hover: #6a5e4e;
+  --danger: #e8897a;
+  --danger-hover: #d97768;
+  --danger-text: #1a1a18;
+  --danger-bg: #3d2e2a;
+  --text: #e8e0d4;
+  --text-muted: #9a9288;
+  --text-heading: #b8d8b8;
+  --border: #4a463e;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.2);
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
 
-:root,
+[data-theme="dark-bb-pastel"] {
+  --bg-base: #2a2722;
+  --bg-surface: #35312b;
+  --bg-card: #3d3932;
+  --primary: #8cb88c;
+  --primary-hover: #7da87d;
+  --primary-text: #1a1a18;
+  --secondary: #5a4e3e;
+  --secondary-hover: #6a5e4e;
+  --danger: #e8897a;
+  --danger-hover: #d97768;
+  --danger-text: #1a1a18;
+  --danger-bg: #3d2e2a;
+  --text: #e8e0d4;
+  --text-muted: #9a9288;
+  --text-heading: #b8d8b8;
+  --border: #4a463e;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.2);
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+[data-theme="dark-nord"] {
+  --bg-base: #2e3440;
+  --bg-surface: #3b4252;
+  --bg-card: #434c5e;
+  --primary: #88c0d0;
+  --primary-hover: #7bb0c0;
+  --primary-text: #2e3440;
+  --secondary: #4c566a;
+  --secondary-hover: #5c667a;
+  --danger: #bf616a;
+  --danger-hover: #ae525b;
+  --danger-text: #2e3440;
+  --danger-bg: #3a2e34;
+  --text: #eceff4;
+  --text-muted: #8d94a5;
+  --text-heading: #e5e9f0;
+  --border: #4c566a;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
 [data-theme="bb-pastel"] {
   --bg-base: #f9f6f1;
   --bg-surface: #ffffff;
@@ -13,6 +81,7 @@
   --danger: #e8897a;
   --danger-hover: #d97768;
   --danger-text: #ffffff;
+  --danger-bg: #fef2f2;
   --text: #3a3a3a;
   --text-muted: #8a8a7a;
   --text-heading: #5a7a5a;
@@ -35,6 +104,7 @@
   --danger: #bf616a;
   --danger-hover: #ae525b;
   --danger-text: #ffffff;
+  --danger-bg: #f0f2f5;
   --text: #2e3440;
   --text-muted: #6c7280;
   --text-heading: #3b4252;

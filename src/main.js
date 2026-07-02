@@ -5,11 +5,13 @@ const $$ = (sel) => document.querySelectorAll(sel);
 
 // --- Theme Toggle ---
 const themeToggle = $('#theme-toggle');
-let currentTheme = localStorage.getItem('theme') || 'bb-pastel';
+let currentTheme = localStorage.getItem('theme') || 'dark-bb-pastel';
 document.documentElement.setAttribute('data-theme', currentTheme);
 
+const themes = ['dark-bb-pastel', 'dark-nord', 'bb-pastel', 'nord'];
 themeToggle.addEventListener('click', () => {
-  currentTheme = currentTheme === 'bb-pastel' ? 'nord' : 'bb-pastel';
+  const idx = themes.indexOf(currentTheme);
+  currentTheme = themes[(idx + 1) % themes.length];
   document.documentElement.setAttribute('data-theme', currentTheme);
   localStorage.setItem('theme', currentTheme);
 });

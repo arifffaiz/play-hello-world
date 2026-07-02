@@ -218,14 +218,11 @@ main {
   margin-top: 0.75rem;
   padding: 0.8rem 1rem;
   border-radius: var(--radius-sm);
-  background: #fef2f2;
+  background: var(--danger-bg);
   border: 1px solid var(--danger);
   color: var(--danger);
 }
 
-[data-theme="nord"] .error-boundary {
-  background: #f0f2f5;
-}
 
 .error-boundary.hidden {
   display: none;
